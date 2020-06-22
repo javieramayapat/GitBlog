@@ -4,3 +4,5 @@ Javier Amaya tiene 25 años,
 comenzando su preparación en platzi
 
 hoy hablaremos de su carrera laboral.
+
+Javier ahora es flutter developer.
