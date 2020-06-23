@@ -6,3 +6,5 @@ comenzando su preparación en platzi
 hoy hablaremos de su carrera laboral.
 
 Javier ahora es flutter developer.
+
+Tal vez el día de mañana siga creando cosas increibles.
