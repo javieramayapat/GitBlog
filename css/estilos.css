@@ -27,6 +27,15 @@ p{
     padding: 0.5em;
 }
 
+#footer {
+    bottom: 0px;
+    margin: 0px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    background: #33A;
+}
+
 #cabecera #tagline
 {
     padding: 0 0 0 1em;
@@ -49,5 +58,5 @@ p{
 }
 #post
 {
-    padding: 1em;
+    padding: 2em;
 }
