@@ -5,6 +5,6 @@ comenzando su preparación en platzi
 
 hoy hablaremos de su carrera laboral.
 
-Javier ahora es flutter developer.
+Javier ahora es backend developer.
 
-Tal vez el día de mañana siga creando cosas increibles.
+El día de mañana siga creando cosas increíbles.
