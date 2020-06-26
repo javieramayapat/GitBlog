@@ -1,169 +1,180 @@
 <html>
-    <head>
-        <title> GitBlog </title>
-        <link rel="stylesheet" href="css/estilos.css" />
-    </head>
-    <body>
-        <div id="container">
-            <div id="cabecera" >
-                <img src="img/git.png" alt="" class="logo">Gitblog
-                <span id="tagline">Tu blog de comandos al alcance</span>
-            </div>
-            <div id="post">
-                <h1>Comandos git de básico a intermedio</h1>
-                <p>Git es un sistema de control de versiones que nos ayuda a gestionar y almacenar
-                    los cambiós de nuestros proyectos. Tiene tanto poder que  se ha convertido en una red social de programadores en la cual se comparten miles de lineas de código,
-                    de esa manera se motiva el codigo open source y el trabajo colaborativo.
-                </p>                
-            </div>
-            
-            <div id="tabla">
-                <h2>Tabla de comandos aprendidos</h2>
-                <table>
-                    <thead>
-                         <!-- Tr -> table row -->
-                        <tr>
-                            <!-- th ->table header -->
-                            <th>#</th>
-                            <th>Comando</th>
-                            <th>Descripción</th>
-                        </tr>    
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td class="comando">git init</td>
-                            <td>Empieza en mi carpeta un repositorio de git, almacena espacio en memoria para el staging y empieza el track de mis archivos.</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td class="comando">git add archivo.txt</td>
-                            <td>Añade contenido del directorio de trabajo al área de stage</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td class="comando">git commit -m "mensaje"</td>
-                            <td>Almacena los cambios contenidos en el stage en la base atómica de git</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td class="comando"> git add .</td>
-                            <td>Agregas todos los archivos de la carpeta que han sido modificados en lugar de introducirlos uno por uno.</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td class="comando">git status</td>
-                            <td>Mustrará los diferentes estados de los archivos en tu directorio de trabajo y área de staging.</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td class="comando">git show</td>
-                            <td>Muestra todos los cambios echos sobre un archivo</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td class="comando">git log</td>
-                            <td>Muestra todos los log de commits de la base de datos de git, mostrando información de quien, cuando y a que hora fueron guardados esos cambios.</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td class="comando">git restore ejecicio1.txt</td>
-                            <td>Me ayuda a traer de vuelta un archivo que acabo de eliminar</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td class="comando">git branch nombreDeLaRama</td>
-                            <td>Crea una nueva rama de trabajo.</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td class="comando">git branch -d nombreDeLaRama</td>
-                            <td>Comando que borra una rama</td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td class="comando">git rm --cached ejecicio1.txt</td>
-                            <td>Significa que eliminara el archivo de la memoria ram (staging)</td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td class="comando">git config --global  user.name "Javier Amaya"</td>
-                            <td>Configura el usuario global de git</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td class="comando">git config --global user.email "javieramayapat@gmail.com"</td>
-                            <td>Configura el correo global en las credenciales de git.</td>
-                        </tr>
-                        <tr>
-                            <td>14</td>
-                            <td class="comando">git diff indicadorDeCommit  indicardorOtrocommit</td>
-                            <td>Muestra los cambios entre un archivo y otro</td>
-                        </tr>
-                        <tr>
-                            <td>15</td>
-                            <td class="comando">git log --stat</td>
-                            <td>Nos ayuda ver estadísticas de las confirmaciones de commits.</td>
-                        </tr>
-                        <tr>
-                            <td>16</td>
-                            <td class="comando">git checkout nombreRama</td>
-                            <td>Ayuda a cambiar de una rama a otra.</td>
-                        </tr>
-                        <tr>
-                            <td>17</td>
-                            <td class="comando">git log --oneline --graph --all</td>
-                            <td>Muestra una linea de los commits realizado de una forma grafica.</td>
-                        </tr>
-                        <tr>
-                            <td>18</td>
-                            <td class="comando">gitk</td>
-                            <td>comando que abre una ventana donde podemos visualizar el historial de commits de manera elegante.</td>
-                        </tr>
-                        <tr>
-                            <td>19</td>
-                            <td class="comando">git commit -amend -m "mensaje"</td>
-                            <td>este comando ayuda modificar el nombre del último comando en caso de una mala escritura</td>
-                        </tr>
-                        <tr>
-                            <td>20</td>
-                            <td class="comando">git reset head</td>
-                            <td>Ayuda a quitar los archivos guardados en el staging.</td>
-                        </tr>
-                        <tr>
-                            <td>21</td>
-                            <td class="comando">git merge "nombre de la rama a unir"</td>
-                            <td>Comando que me ayuda a agrear los cambios de una rama con otra. Nota Siempre debes colocarte en la rama principal para unir la secundaria.</td>
-                        </tr>
-                        <tr>
-                            <td>22</td>
-                            <td class="comando">git pull origin "nombre de la rama"</td>
-                            <td>Trae los últimos cambios cambios del repositorio remoto y los agreg al local. Nota: Este comando siempre debe ejecutarse antes de hacer un git push, denota una buena práctica.</td>
-                        </tr>
-                        <tr>
-                            <td>23</td>
-                            <td class="comando">git push origin "nombre de la rama"</td>
-                            <td>Comando que envia los cambios del repositorio local al remoto</td>
-                        </tr>
-                        <tr>
-                            <td>24</td>
-                            <td class="comando">git diff head</td>
-                            <td>Comando que ayuda visualizar los cambios realizados en el archivo.</td>
-                        </tr>
-                        <tr>
-                            <td>25</td>
-                            <td class="comando">git push origin "nombre de la rama"</td>
-                            <td>Comando que env&iacute;a la rama creada en local a Github</td>
-                        </tr>
-                                                                     
-                    </tbody>
-                   
-                </table>
 
-            </div>
-            <footer id="footer">
-                 <span>&copy; Javier Amaya 2020</span>
-            </footer>
+<head>
+    <title> GitBlog </title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="cabecera">
+            <img src="img/git.png" alt="" class="logo">Gitblog
+            <span id="tagline">Tu blog de comandos al alcance</span>
         </div>
-    </body>
+        <div id="post">
+            <h1>Comandos git de básico a intermedio</h1>
+            <p>Git es un sistema de control de versiones que nos ayuda a gestionar y almacenar los cambiós de nuestros proyectos. Tiene tanto poder que se ha convertido en una red social de programadores en la cual se comparten miles de lineas de código,
+                de esa manera se motiva el codigo open source y el trabajo colaborativo.
+            </p>
+        </div>
+
+        <div id="tabla">
+            <h2>Tabla de comandos aprendidos</h2>
+            <table>
+                <thead>
+                    <!-- Tr -> table row -->
+                    <tr>
+                        <!-- th ->table header -->
+                        <th>#</th>
+                        <th>Comando</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="comando">git init</td>
+                        <td>Empieza en mi carpeta un repositorio de git, almacena espacio en memoria para el staging y empieza el track de mis archivos.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="comando">git add archivo.txt</td>
+                        <td>Añade contenido del directorio de trabajo al área de stage</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="comando">git commit -m "mensaje"</td>
+                        <td>Almacena los cambios contenidos en el stage en la base atómica de git</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="comando"> git add .</td>
+                        <td>Agregas todos los archivos de la carpeta que han sido modificados en lugar de introducirlos uno por uno.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="comando">git status</td>
+                        <td>Mustrará los diferentes estados de los archivos en tu directorio de trabajo y área de staging.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="comando">git show</td>
+                        <td>Muestra todos los cambios echos sobre un archivo</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="comando">git log</td>
+                        <td>Muestra todos los log de commits de la base de datos de git, mostrando información de quien, cuando y a que hora fueron guardados esos cambios.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="comando">git restore ejecicio1.txt</td>
+                        <td>Me ayuda a traer de vuelta un archivo que acabo de eliminar</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="comando">git branch nombreDeLaRama</td>
+                        <td>Crea una nueva rama de trabajo.</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="comando">git branch -d nombreDeLaRama</td>
+                        <td>Comando que borra una rama</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td class="comando">git rm --cached ejecicio1.txt</td>
+                        <td>Significa que eliminara el archivo de la memoria ram (staging)</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="comando">git config --global user.name "Javier Amaya"</td>
+                        <td>Configura el usuario global de git</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td class="comando">git config --global user.email "javieramayapat@gmail.com"</td>
+                        <td>Configura el correo global en las credenciales de git.</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td class="comando">git diff indicadorDeCommit indicardorOtrocommit</td>
+                        <td>Muestra los cambios entre un archivo y otro</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td class="comando">git log --stat</td>
+                        <td>Nos ayuda ver estadísticas de las confirmaciones de commits.</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td class="comando">git checkout nombreRama</td>
+                        <td>Ayuda a cambiar de una rama a otra.</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td class="comando">git log --oneline --graph --all</td>
+                        <td>Muestra una linea de los commits realizado de una forma grafica.</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td class="comando">gitk</td>
+                        <td>comando que abre una ventana donde podemos visualizar el historial de commits de manera elegante.</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td class="comando">git commit -amend -m "mensaje"</td>
+                        <td>este comando ayuda modificar el nombre del último comando en caso de una mala escritura</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td class="comando">git reset head</td>
+                        <td>Ayuda a quitar los archivos guardados en el staging.</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td class="comando">git merge "nombre de la rama a unir"</td>
+                        <td>Comando que me ayuda a agrear los cambios de una rama con otra. Nota Siempre debes colocarte en la rama principal para unir la secundaria.</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="comando">git pull origin "nombre de la rama"</td>
+                        <td>Trae los últimos cambios cambios del repositorio remoto y los agreg al local. Nota: Este comando siempre debe ejecutarse antes de hacer un git push, denota una buena práctica.</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td class="comando">git push origin "nombre de la rama"</td>
+                        <td>Comando que envia los cambios del repositorio local al remoto</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td class="comando">git diff head</td>
+                        <td>Comando que ayuda visualizar los cambios realizados en el archivo.</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td class="comando">git push origin "nombre de la rama"</td>
+                        <td>Comando que env&iacute;a la rama creada en local a Github</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td class="comando">git clone "url del repositorio"</td>
+                        <td>Comando que permite clonar un reposotorio de github via https o via ssh.</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td class="comando">vi "nombre del archivo"</td>
+                        <td>Comando que permite la modificación del archivo en la consola.</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+        <footer id="footer">
+            <span>&copy; Javier Amaya 2020</span>
+        </footer>
+    </div>
+</body>
+
 </html>
