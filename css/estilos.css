@@ -40,6 +40,11 @@ td, th {
     background-color: #dddddd;
   }
 
+.comando {
+    color: darkblue;
+    font-weight: bold;
+}
+
 
 #cabecera
 {
