@@ -1,10 +1,10 @@
-﻿Hola esta es la historia de Javier Amaya
+﻿Hola esta es la historia de Javier Amaya Patricio
 
-Javier Amaya tiene 25 años,
-comenzando su preparación en platzi
+Javier tiene 24 años,
+A comenzando su preparación en platzi
 
 hoy hablaremos de su carrera laboral.
 
-Javier ahora es flutter developer.
+Javier ahora es backend developer.
 
-Tal vez el día de mañana siga creando cosas increibles.
+El día de mañana seguirá creando cosas increíbles.

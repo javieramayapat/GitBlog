@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>El titulo del post</title>
+        <title> GitBlog </title>
         <link rel="stylesheet" href="css/estilos.css" />
     </head>
     <body>
@@ -12,9 +12,104 @@
             <div id="post">
                 <h1>Comandos git de básico a intermedio</h1>
                 <p>Git es un sistema de control de versiones que nos ayuda a gestionar y almacenar
-                    los cambiós de nuestros proyectos. Pensando eso tiene tanto poder que puede llegar a convertirse en una red social de programadores en la cual se comparten miles de lineas de código,
+                    los cambiós de nuestros proyectos. Tiene tanto poder que  se ha convertido en una red social de programadores en la cual se comparten miles de lineas de código,
                     de esa manera se motiva el codigo open source y el trabajo colaborativo.
                 </p>                
+            </div>
+            
+            <div id="tabla">
+                <h2>Tabla de comandos aprendidos</h2>
+                <table>
+                    <thead>
+                         <!-- Tr -> table row -->
+                        <tr>
+                            <!-- th ->table header -->
+                            <th>#</th>
+                            <th>Comando</th>
+                            <th>Descripción</th>
+                        </tr>    
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>git init</td>
+                            <td>Empieza en mi carpeta un repositorio de git, almacena espacio en memoria para el staging y empieza el track de mis archivos.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>git add archivo.txt</td>
+                            <td>Añade contenido del directorio de trabajo al área de stage</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>git commit -m "mensaje"</td>
+                            <td>Almacena los cambios contenidos en el stage en la base atómica de git</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>git add .</td>
+                            <td>Agregas todos los archivos de la carpeta que han sido modificados en lugar de introducirlos uno por uno.</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>git status</td>
+                            <td>Mustrará los diferentes estados de los archivos en tu directorio de trabajo y área de staging.</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>git show</td>
+                            <td>Muestra todos los cambios echos sobre un archivo</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>git log</td>
+                            <td>Muestra todos los log de commits de la base de datos de git, mostrando información de quien, cuando y a que hora fueron guardados esos cambios.</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>git restore ejecicio1.txt</td>
+                            <td>Me ayuda a traer de vuelta un archivo que acabo de eliminar</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>git branch nombreDeLaRama</td>
+                            <td>Crea una nueva rama de trabajo.</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>git branch -d nombreDeLaRama</td>
+                            <td>Comando que borra una rama</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>git rm --cached ejecicio1.txt</td>
+                            <td>Significa que eliminara el archivo de la memoria ram (staging)</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>git config --global  user.name "Javier Amaya"</td>
+                            <td>Configura el usuario global de git</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>git config --global user.email "javieramayapat@gmail.com"</td>
+                            <td>Configura el correo global en las credenciales de git.</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>git diff indicadorDeCommit  indicardorOtrocommit</td>
+                            <td>Muestra los cambios entre un archivo y otro</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>git log --stat</td>
+                            <td>Nos ayuda ver estadísticas de las confirmaciones de commits.</td>
+                        </tr>
+                                                                     
+                    </tbody>
+                   
+                </table>
+
             </div>
             <footer id="footer">
                  <span>&copy; Javier Amaya 2020</span>
