@@ -50,9 +50,10 @@ td, th {
     bottom: 0px;
     margin: 0px;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     background: #33A;
+    padding: 0.5em;
 }
 
 #cabecera #tagline
