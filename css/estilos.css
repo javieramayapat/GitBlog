@@ -16,23 +16,9 @@ p{
     text-align: justify;   
 }
 
-table{
-    width: 100%;
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    padding-bottom: 25px;;
+.logo {
+    height: 20px;
 }
-
-td, th {
-    border: 0.5px solid #dddddd;
-    text-align: left;
-    padding: 4px;
-    font-size: 14px;
-  }
-
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
 
 
 #cabecera
