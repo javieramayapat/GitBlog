@@ -45,6 +45,11 @@ td, th {
     font-weight: bold;
 }
 
+.imagenCentral {
+    height: 70px;
+    margin-left: 25;
+}
+
 
 #cabecera
 {
