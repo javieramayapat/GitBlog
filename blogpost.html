@@ -3,23 +3,41 @@
 <head>
     <title> GitBlog </title>
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
     <div id="container">
-        <div id="cabecera">
-            <img src="img/git.png" alt="" class="logo">Gitblog
-            <span id="tagline">Tu blog de comandos al alcance</span>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="/img/git.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Gitblog
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Tu blog de comandos al alcance</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
         <div id="post">
             <h1>Comandos git de básico a intermedio</h1>
-            <p>Git es un sistema de control de versiones que nos ayuda a gestionar y almacenar los cambiós de nuestros proyectos. Tiene tanto poder que se ha convertido en una red social de programadores en la cual se comparten miles de lineas de código,
+            <p>Git es un sistema de control de versiones que nos ayuda a gestionar y almacenar los cambiós de nuestros
+                proyectos. Tiene tanto poder que se ha convertido en una red social de programadores en la cual se
+                comparten miles de lineas de código,
                 de esa manera se motiva el codigo open source y el trabajo colaborativo.
             </p>
             <p><strong>Nota:</strong>¡Aprender git y GitHub te trae super poderes!</p>
         </div>
         <div class="post">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/640px-Git-logo.svg.png" class="imagenCentral" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/640px-Git-logo.svg.png"
+                class="imagenCentral" alt="">
         </div>
 
         <div id="tabla">
@@ -38,7 +56,8 @@
                     <tr>
                         <td>1</td>
                         <td class="comando">git init</td>
-                        <td>Empieza en mi carpeta un repositorio de git, almacena espacio en memoria para el staging y empieza el track de mis archivos.</td>
+                        <td>Empieza en mi carpeta un repositorio de git, almacena espacio en memoria para el staging y
+                            empieza el track de mis archivos.</td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -53,12 +72,14 @@
                     <tr>
                         <td>4</td>
                         <td class="comando"> git add .</td>
-                        <td>Agregas todos los archivos de la carpeta que han sido modificados en lugar de introducirlos uno por uno.</td>
+                        <td>Agregas todos los archivos de la carpeta que han sido modificados en lugar de introducirlos
+                            uno por uno.</td>
                     </tr>
                     <tr>
                         <td>5</td>
                         <td class="comando">git status</td>
-                        <td>Mustrará los diferentes estados de los archivos en tu directorio de trabajo y área de staging.</td>
+                        <td>Mustrará los diferentes estados de los archivos en tu directorio de trabajo y área de
+                            staging.</td>
                     </tr>
                     <tr>
                         <td>6</td>
@@ -68,7 +89,8 @@
                     <tr>
                         <td>7</td>
                         <td class="comando">git log</td>
-                        <td>Muestra todos los log de commits de la base de datos de git, mostrando información de quien, cuando y a que hora fueron guardados esos cambios.</td>
+                        <td>Muestra todos los log de commits de la base de datos de git, mostrando información de quien,
+                            cuando y a que hora fueron guardados esos cambios.</td>
                     </tr>
                     <tr>
                         <td>8</td>
@@ -123,7 +145,8 @@
                     <tr>
                         <td>18</td>
                         <td class="comando">gitk</td>
-                        <td>comando que abre una ventana donde podemos visualizar el historial de commits de manera elegante.</td>
+                        <td>comando que abre una ventana donde podemos visualizar el historial de commits de manera
+                            elegante.</td>
                     </tr>
                     <tr>
                         <td>19</td>
@@ -138,12 +161,14 @@
                     <tr>
                         <td>21</td>
                         <td class="comando">git merge "nombre de la rama a unir"</td>
-                        <td>Comando que me ayuda a agrear los cambios de una rama con otra. Nota Siempre debes colocarte en la rama principal para unir la secundaria.</td>
+                        <td>Comando que me ayuda a agrear los cambios de una rama con otra. Nota Siempre debes colocarte
+                            en la rama principal para unir la secundaria.</td>
                     </tr>
                     <tr>
                         <td>22</td>
                         <td class="comando">git pull origin "nombre de la rama"</td>
-                        <td>Trae los últimos cambios cambios del repositorio remoto y los agreg al local. Nota: Este comando siempre debe ejecutarse antes de hacer un git push, denota una buena práctica.</td>
+                        <td>Trae los últimos cambios cambios del repositorio remoto y los agreg al local. Nota: Este
+                            comando siempre debe ejecutarse antes de hacer un git push, denota una buena práctica.</td>
                     </tr>
                     <tr>
                         <td>23</td>
@@ -173,17 +198,20 @@
                     <tr>
                         <td>28</td>
                         <td class="comando">git rebase nombreDeLaRama</td>
-                        <td>Comando trae la rama entera y la trae o otra rama como si la rama que se trae no hubiese existido (sin merge); cambia la historia de la rama</td>
+                        <td>Comando trae la rama entera y la trae o otra rama como si la rama que se trae no hubiese
+                            existido (sin merge); cambia la historia de la rama</td>
                     </tr>
                     <tr>
                         <td>29</td>
                         <td class="comando">git stash</td>
-                        <td>Permite guardar mis avances de trabajo en un lugar de memoria, mientras hago arreglos de ultimo momento.</td>
+                        <td>Permite guardar mis avances de trabajo en un lugar de memoria, mientras hago arreglos de
+                            ultimo momento.</td>
                     </tr>
                     <tr>
                         <td>30</td>
                         <td class="comando">git stash pop</td>
-                        <td>Permite recuperar los cambios de mi avance una vez terminados los cambios de urgencia, y se guir trabajando.</td>
+                        <td>Permite recuperar los cambios de mi avance una vez terminados los cambios de urgencia, y se
+                            guir trabajando.</td>
                     </tr>
                     <tr>
                         <td>31</td>
@@ -198,7 +226,8 @@
                     <tr>
                         <td>33</td>
                         <td class="comando">git stash branch nombreDeLaRama</td>
-                        <td>Permite enviar los cambios del stash creados en la rama principal y mandarlos como stash de la nueva rama.</td>
+                        <td>Permite enviar los cambios del stash creados en la rama principal y mandarlos como stash de
+                            la nueva rama.</td>
                     </tr>
                     <tr>
                         <td>34</td>
@@ -219,6 +248,15 @@
             <span>&copy; Javier Amaya 2020</span>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
